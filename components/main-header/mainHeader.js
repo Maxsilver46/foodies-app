@@ -1,16 +1,10 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import logoImg from "@/assets/logo.png";
 import MainHeaderBackground from "@/components/main-header/mainHeaderBackground";
-import { usePathname } from "next/navigation";
-
-const getActiveClass = (path, targetPath) =>
-  path.startsWith(targetPath) ? "nav-active" : "";
+import NavLink from "./navLink";
 
 export default function MainHeader() {
-  const path = usePathname();
-
   return (
     <>
       <MainHeaderBackground />
@@ -27,30 +21,13 @@ export default function MainHeader() {
           />
           <span className="text-3xl">NextLevel Food</span>
         </Link>
-
         <nav>
           <ul className="list-none m-0 p-0 flex gap-6 text-2xl">
             <li>
-              <Link
-                href="/meals"
-                className={`no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover ${getActiveClass(
-                  path,
-                  "/meals"
-                )}`}
-              >
-                Browse Meals
-              </Link>
+              <NavLink href="/meals">Browse Meals</NavLink>
             </li>
             <li>
-              <Link
-                href="/community"
-                className={`no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover ${getActiveClass(
-                  path,
-                  "/community"
-                )}`}
-              >
-                Foodies Community
-              </Link>
+              <NavLink href="/community">Foodies Community</NavLink>
             </li>
           </ul>
         </nav>
