@@ -1,8 +1,16 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import logoImg from "@/assets/logo.png";
 import MainHeaderBackground from "@/components/main-header/mainHeaderBackground";
+import { usePathname } from "next/navigation";
+
+const getActiveClass = (path, targetPath) =>
+  path.startsWith(targetPath) ? "nav-active" : "";
+
 export default function MainHeader() {
+  const path = usePathname();
+
   return (
     <>
       <MainHeaderBackground />
@@ -25,7 +33,10 @@ export default function MainHeader() {
             <li>
               <Link
                 href="/meals"
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover"
+                className={`no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover ${getActiveClass(
+                  path,
+                  "/meals"
+                )}`}
               >
                 Browse Meals
               </Link>
@@ -33,7 +44,10 @@ export default function MainHeader() {
             <li>
               <Link
                 href="/community"
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover"
+                className={`no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover ${getActiveClass(
+                  path,
+                  "/community"
+                )}`}
               >
                 Foodies Community
               </Link>
