@@ -74,7 +74,6 @@ svg {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Hero title gradient */
 .hero-title-gradient {
   background: linear-gradient(90deg, #f9572a, #ffc905);
   background-clip: text;
@@ -82,7 +81,6 @@ svg {
   -webkit-text-fill-color: transparent;
 }
 
-/* CTA button gradients */
 .cta-primary-gradient {
   background: linear-gradient(90deg, #f9572a, #ff9b05);
 }
@@ -91,7 +89,6 @@ svg {
   background: linear-gradient(90deg, #fd4715, #f9b241);
 }
 
-/* Slideshow image animations */
 .slideshow-image {
   opacity: 0;
   transform: scale(1.1) translateX(-1rem) rotate(-5deg);
@@ -102,4 +99,27 @@ svg {
   z-index: 1;
   opacity: 1;
   transform: scale(1) translateX(0) rotate(0);
+}
+
+.nav-hover:hover {
+  background: linear-gradient(90deg, #ff8a05, #f9b331);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+}
+
+.nav-hover:active {
+  background: linear-gradient(90deg, #ff8a05, #f9b331);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+}
+
+.highlight-gradient {
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

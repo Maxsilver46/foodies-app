@@ -25,7 +25,7 @@ export default function MainHeader() {
             <li>
               <Link
                 href="/meals"
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg hover:gradient-text hover:text-shadow-glow"
+                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover"
               >
                 Browse Meals
               </Link>
@@ -33,7 +33,7 @@ export default function MainHeader() {
             <li>
               <Link
                 href="/community"
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg hover:gradient-text hover:text-shadow-glow"
+                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover"
               >
                 Foodies Community
               </Link>
