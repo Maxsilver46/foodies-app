@@ -22,6 +22,7 @@ const images = [
 
 export default function ImageSlideshow() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const imgActiveStyles = "z-[1] scale-100 translate-x-0 rotate-0";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,9 +40,10 @@ export default function ImageSlideshow() {
         <Image
           key={index}
           src={image.image}
-          className={`w-full h-full object-cover absolute top-0 left-0 slideshow-image ${
-            index === currentImageIndex ? "slideshow-image-active" : ""
-          }`}
+          className={`w-full h-full object-cover absolute scale-110 -translate-x-4 -rotate-6
+            transition-all duration-500 ease-in-out ${
+              index === currentImageIndex ? imgActiveStyles : ""
+            }`}
           alt={image.alt}
         />
       ))}

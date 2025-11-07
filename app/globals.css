@@ -66,48 +66,6 @@ svg {
   color: #ddd8d8;
 }
 
-.gradient-text {
-  background: linear-gradient(90deg, #ff8a05, #f9b331);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-shadow-glow {
-  text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
-}
-
-.font-montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
-.hero-title-gradient {
-  background: linear-gradient(90deg, #f9572a, #ffc905);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cta-primary-gradient {
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
-}
-
-.cta-primary-gradient:hover {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
-}
-
-.slideshow-image {
-  opacity: 0;
-  transform: scale(1.1) translateX(-1rem) rotate(-5deg);
-  transition: all 0.5s ease-in-out;
-}
-
-.slideshow-image-active {
-  z-index: 1;
-  opacity: 1;
-  transform: scale(1) translateX(0) rotate(0);
-}
-
 .nav-hover:hover {
   background: linear-gradient(90deg, #ff8a05, #f9b331);
   background-clip: text;
@@ -136,4 +94,19 @@ svg {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Meal card background gradient */
+.meal-card-gradient {
+  background: linear-gradient(90deg, #2c1e19, #25200f);
+}
+
+/* Meal action button with hover effects */
+.meal-action-btn {
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+}
+
+.meal-action-btn:hover {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+  box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
 }

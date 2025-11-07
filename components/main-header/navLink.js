@@ -11,10 +11,8 @@ export default function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className={`no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover ${getActiveClass(
-        path,
-        href
-      )}`}
+      className={`no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg nav-hover 
+      ${getActiveClass(path, href)}`}
     >
       {children}
     </Link>
